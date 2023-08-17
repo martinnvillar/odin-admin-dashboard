@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: inline-grid;
+    grid-template-columns: 300px 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+}
+
+.right-side {
+    background-color: #212121;
+    height: 100vh;
+}
+
+.top-bar {
+    background-color: red;
+    grid-column: 2 / 5;
+}
+
+.content-section {
+    height: 100%;
+    background-color: blue;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+}
+
+.left-side {
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
