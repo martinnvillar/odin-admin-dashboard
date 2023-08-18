@@ -17,34 +17,35 @@ body {
     width: 100vw;
     height: 100vh;
     display: inline-grid;
-    grid-template-columns: 320px 1fr 1fr 1fr;
+    grid-template-columns: 270px 1fr 1fr 1fr;
     grid-template-rows: 150px 1fr 1fr 1fr;
 }
 
 .left-side {
     background-color: #d5d4d4;
     height: 100vh;
-    padding: 20px;
+    padding: 30px;
 }
 
 h1 {
     margin: 0;
     font-family: 'MyFont';
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .logo-container {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    width: 290px;
+    align-items: center;
     color: #212121;
-    font-size: 20px;
+    font-size: 13px;
+    margin-bottom: 45px;
 }
 
 .logo-img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .top-bar {
@@ -68,4 +69,42 @@ h1 {
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 5;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #212121;
+}
+
+a:hover {
+    text-decoration:underline;
+    color: #212121;
+}
+
+.control-icon {
+    height: 25px;
+    width: 25px;
+    margin-top: 3px;
+}
+
+.flex-control {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: 'MyFont';
+    font-weight: bold;
+    font-size: 18px;
+    color: #212121;
+}
+
+#margin-panel {
+    margin-top: 50px;
 }
