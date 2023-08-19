@@ -9,6 +9,7 @@
     src: url(MerriweatherSans-VariableFont_wght.ttf);
 }
 
+
 body {
     margin: 0;
 }
@@ -17,12 +18,12 @@ body {
     width: 100vw;
     height: 100vh;
     display: inline-grid;
-    grid-template-columns: 270px 1fr 1fr 1fr;
+    grid-template-columns: 210px 1fr 1fr 1fr;
     grid-template-rows: 150px 1fr 1fr 1fr;
 }
 
 .left-side {
-    background-color: #d5d4d4;
+    background-color: #332f2f;
     height: 100vh;
     padding: 30px;
 }
@@ -38,19 +39,20 @@ h1 {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-    color: #212121;
-    font-size: 13px;
-    margin-bottom: 45px;
+    color: #e4e0e0;
+    font-size: 8px;
+    margin-bottom: 35px;
 }
 
 .logo-img {
-    width: 40px;
-    height: 40px;
+    width: 27px;
+    height: 27px;
 }
 
 .top-bar {
-    background-color: #212121;
+    background-color: #e4e0e0;
     grid-column: 2 / 5;
+
 }
 
 .content-section {
@@ -74,24 +76,26 @@ h1 {
 a,
 a:visited {
     text-decoration: none;
-    color: #212121;
+    color: #e4e0e0;
+    font-weight: lighter;
+    font-size: 12px;
 }
 
 a:hover {
     text-decoration:underline;
-    color: #212121;
+    color: #e4e0e0;
 }
 
 .control-icon {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin-top: 3px;
 }
 
 .flex-control {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .control-panel {
@@ -101,10 +105,29 @@ a:hover {
     gap: 15px;
     font-family: 'MyFont';
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     color: #212121;
 }
 
 #margin-panel {
     margin-top: 50px;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.top-side {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    
+}
+
+.search-bar {
+    border-radius: 40px;
+    padding-left: 8px;
+    outline: none;
+    border: none;
 }
