@@ -51,7 +51,8 @@ h1 {
     background-color: #e4e0e0;
     grid-column: 2 / 7;
     padding: 20px;
-
+    box-shadow: 1px 1px 2px #332f2f73;
+    position: relative;
 }
 
 .right-side {
@@ -179,7 +180,7 @@ a:hover {
     border-left: 8px solid #332f2f;
     width: 280px;
     height: 250px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 2px 2px 4px #21212169;
