@@ -15,17 +15,15 @@ body {
 }
 
 .grid-container {
-    width: 100vw;
-    height: 100vh;
     display: inline-grid;
-    grid-template-columns: 210px 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-columns: 210px repeat(1, 1fr);
+    grid-template-rows: 150px repeat(1, 1fr);
 }
 
 .left-side {
     background-color: #332f2f;
-    height: 100vh;
     padding: 30px;
+    grid-row: 1/3;
 }
 
 h1 {
@@ -109,6 +107,7 @@ a:hover {
     font-weight: bold;
     font-size: 15px;
     color: #212121;
+
 }
 
 #margin-panel {
@@ -178,16 +177,17 @@ a:hover {
     background-color: #e4e0e0;
     border: 1px solid #332f2f;
     border-left: 8px solid #332f2f;
-    width: 300px;
-    height: 220px;
-    border-radius: 5px;
+    width: 280px;
+    height: 250px;
+    border-radius: 20px;
     padding: 10px;
     transition: transform 0.5s ease-in-out;
     box-shadow: 2px 2px 4px #21212169;
+    text-align: justify;
 }
 
 .notes:hover {
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 h2, h3 {
@@ -199,4 +199,22 @@ p {
     font-family: 'MyFont';
     font-size: 13px;
     color: #332f2f;
+}
+
+.note-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.not-ico-img {
+    height: 25px;
+    width: 25px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.not-ico-img:hover {
+    cursor: pointer;
+    filter: opacity(70%)
 }
