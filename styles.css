@@ -18,6 +18,7 @@ body {
     display: inline-grid;
     grid-template-columns: 210px repeat(5, 1fr);
     grid-template-rows: 150px repeat(1, 1fr);
+    width: 100vw;
 }
 
 .left-side {
@@ -68,7 +69,7 @@ h1 {
 .content-section {
     background-color: #fff;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 5;
     padding: 15px;
@@ -198,7 +199,7 @@ h2, h3 {
 
 p {
     font-family: 'MyFont';
-    font-size: 13px;
+    font-size: 12px;
     color: #332f2f;
 }
 
