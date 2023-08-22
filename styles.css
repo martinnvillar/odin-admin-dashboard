@@ -9,7 +9,6 @@
     src: url(MerriweatherSans-VariableFont_wght.ttf);
 }
 
-
 body {
     margin: 0;
 }
@@ -193,7 +192,7 @@ a:hover {
     transform: scale(0.98);
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
     font-family: 'MyFont';
     color: #332f2f;
 }
@@ -227,12 +226,34 @@ p {
     border-radius: 15px;
     padding: 15px;
     box-shadow: 2px 2px 2px #21212169;
+    text-align: justify;
 }
 
 .announce1, .announce2 {
     border-bottom: 1px solid #332f2f;
 }
 
-.update-p {
-    font-size: 12px;
+.trending-section {
+    border: 1px solid #332f2f;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 2px 2px 2px #21212169;
+    border-right: 8px solid #332f2f;
 }
+
+.trend-picture {
+    height: 50px;
+    width: 50px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.trend-tittle {
+    margin-bottom: -5px;
+}
+
