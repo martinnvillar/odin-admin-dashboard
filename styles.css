@@ -150,7 +150,9 @@ a:hover {
     grid-column-end: 5;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
 }
 
 .notification-icon {
@@ -163,9 +165,12 @@ a:hover {
 }
 
 #right-pic {
-    height: 40px;
-    width: 40px;
-    margin-bottom: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+#right-pic:hover {
+    cursor: pointer;
 }
 
 .grid-cont-section {
@@ -312,6 +317,11 @@ p {
 
 .user-right {
     font-size: 13px;
+    font-weight: bold;
+}
+
+.user-right:hover {
+    cursor: pointer;
 }
 
 .trending-txt {
