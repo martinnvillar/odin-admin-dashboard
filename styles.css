@@ -313,3 +313,28 @@ p {
 .user-right {
     font-size: 13px;
 }
+
+.trending-txt {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 35%;
+}
+
+.follow-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.follow-ico {
+    height: 25px;
+    width: 25px;
+    transition: filter 0.2s ease-in-out;
+}
+
+.follow-ico:hover {
+    cursor: pointer;
+    filter: opacity(60%);
+}
